@@ -96,5 +96,10 @@
   <string name="led_color_red">Rot</string>
   <string name="led_color_blue">Blau</string>
 
+  <!-- Changelog -->
+  <string name="changelog_title">Änderungen</string>
+  <string name="changelog_summary">Seit dem letzten Update</string>
+  <string name="changelog_error">Laden der Änderungshistorie fehlgeschlagen</string>
+
 </resources>
 

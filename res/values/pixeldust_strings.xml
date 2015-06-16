@@ -109,5 +109,10 @@
     <string name="led_color_red">Red</string>
     <string name="led_color_blue">Blue</string>
 
+    <!-- Changelog -->
+    <string name="changelog_title">Changelog</string>
+    <string name="changelog_summary">See the most recent commits</string>
+    <string name="changelog_error">Unable to load changelog</string>
+
 </resources>
 
