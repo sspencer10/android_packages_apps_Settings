@@ -134,5 +134,9 @@
     <string name="pd_preferences_statusbar_title">Statusbar Settings</string>
     <string name="pd_preferences_volume_title">Volume Settings</string>
 
-</resources>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Reset stats</string>
+    <string name="battery_stats_message">Battery history stats are going to be reset</string>
+    <string name="ok_string">Ok</string>
 
+</resources>
