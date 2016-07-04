@@ -3326,6 +3326,7 @@
         <service android:name=".fuelgauge.batterytip.AnomalyDetectionJobService"
                  android:permission="android.permission.BIND_JOB_SERVICE" />
 
+	<activity android:name=".deviceinfo.Changelog" />
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
 </manifest>
