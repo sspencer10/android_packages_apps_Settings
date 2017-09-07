@@ -27,5 +27,13 @@
   <string name="unlock_quick_unlock_control_title">Schnelles Entsperren</string>
   <string name="unlock_quick_unlock_control_summary">Entsperren durch korrekte PIN- oder Passworteingabe</string>
 
+  <!-- Advanced night mode brightness -->
+  <string name="night_brightness_category">Helligkeit</string>
+  <string name="night_brightness_value_title">Helligkeit bei aktiviertem Nachtlicht reduzieren</string>
+  <string name="night_bright_disabled">Deaktiviert</string>
+  <string name="night_bright_minimum">Minimale Helligkeit</string>
+  <string name="night_bright_low">Niedrige Helligkeit</string>
+  <string name="night_bright_medium">Mittlere Helligkeit</string>
+
 </resources>
 
