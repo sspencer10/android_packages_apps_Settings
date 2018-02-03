@@ -30,5 +30,8 @@
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
 
+    <!-- Pixel color on sim card -->
+    <string name="pixel_sim_color">Pixel</string>
+
 </resources>
 
