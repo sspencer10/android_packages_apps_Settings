@@ -157,4 +157,12 @@
     <string name="ambient_recognition_interval_100sec">1 minute 40 seconds</string>
     <string name="ambient_recognition_interval_120sec">2 minutes</string>
 
+    <!-- SystemUI theme -->
+    <string name="systemui_theme_style_title">SystemUI Theme</string>
+    <string name="systemui_theme_style_auto">Automatic (Wallpaper based)</string>
+    <string name="systemui_theme_style_light">Light</string>
+    <string name="systemui_theme_style_dark">Dark</string>
+    <string name="systemui_theme_style_black">Black</string>
+    <string name="systemui_theme_style_shishunights">Shishu Nights</string>
+
 </resources>
