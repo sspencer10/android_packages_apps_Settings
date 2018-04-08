@@ -118,5 +118,8 @@
     <string name="changelog_summary">See the most recent commits</string>
     <string name="changelog_error">Unable to load changelog</string>
 
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_settings_title">Smart Pixels</string>
+
 </resources>
 
