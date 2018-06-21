@@ -96,6 +96,7 @@
         <item>@string/systemui_theme_style_dark</item>
         <item>@string/systemui_theme_style_black</item>
         <item>@string/systemui_theme_style_shishunights</item>
+        <item>@string/systemui_theme_style_chocolate</item>
     </string-array>
 
     <string-array name="systemui_theme_style_values" translatable="false">
@@ -104,6 +105,7 @@
         <item>2</item>
         <item>3</item>
         <item>4</item>
+        <item>5</item>
     </string-array>
 
     <!-- Expanded Desktop -->
