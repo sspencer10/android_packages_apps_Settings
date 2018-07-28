@@ -23,9 +23,9 @@
   <string name="pd_version">Pixel Dust Version</string>
   <string name="pd_version_default">Unbekannt</string>
 
-  <!-- PixelDust build date-->
-  <string name="pd_build_date">Pixel Dust Erstellungsdatum</string>
-  <string name="pd_build_date_default">2017-08-01-0000</string>
+  <!-- OTA -->
+  <string name="pdupdate_settings_title">Pixel Dust Updates</string>
+  <string name="pdupdate_settings_summary">Nach neuer Version suchen</string>
 
   <!-- Quick unlock -->
   <string name="unlock_quick_unlock_control_title">Schnelles Entsperren</string>
@@ -111,5 +111,9 @@
   <string name="ambient_recognition_summary">Musik, die im Hintergrund gespielt wird, wird erkannt und Titel sowie Künstler auf dem Inaktivitätsdisplay angezeigt. Hierdurch erhöht sich die Akku- und Datennutzung.</string>
   <string name="ambient_recognition_lockscreen_title">Now Playing zusätzlich anzeigen</string>
   <string name="ambient_recognition_lockscreen_summary">Auf dem Sperrbildschirm</string>
+
+  <!-- Clang version -->
+  <string name="clang_version">Clang</string>
+  <string name="clang_version_default">Unbekannt</string>
 
 </resources>
