@@ -15,6 +15,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+  <!-- PixelDust Settings strings -->
+  <string name="pixeldust_settings_title">Pixel Dust Einstellungen</string>
+  <string name="pixeldust_settings_summary">ROM Features &amp; benutzerdefinerte Einstellungen</string>
+
   <!-- PixelDust version-->
   <string name="pd_version">Pixel Dust Version</string>
   <string name="pd_version_default">Unbekannt</string>
