@@ -21,6 +21,11 @@
     android:key="my_device_info_pref_screen"
     android:title="@string/about_settings">
 
+    <!-- Pixeldust Logo comes first -->
+    <Preference android:key="pd_logo"
+        android:layout="@layout/pixeldust_logo"
+        settings:allowDividerAbove="true"/>
+
     <com.android.settings.applications.LayoutPreference
         android:key="my_device_info_header"
         android:order="0"
