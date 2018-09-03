@@ -196,4 +196,7 @@
     <string name="accent_picker_material_colors">Material palette</string>
     <string name="accent_picker_custom_colors">User requested</string>
 
+    <!-- Weather parts -->
+    <string name="weather_title">Weather</string>
+
 </resources>
