@@ -18,6 +18,8 @@ import android.content.ContentResolver;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.ServiceManager;
+import android.os.RemoteException;
 import android.provider.Settings;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
@@ -29,6 +31,7 @@ import com.android.settings.R;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settingslib.drawer.SettingsDrawerActivity;
+import com.android.internal.statusbar.IStatusBarService;
 
 import com.android.internal.util.pixeldust.PixeldustUtils;
 
@@ -43,6 +46,7 @@ public class SystemThemePreferenceController extends AbstractPreferenceControlle
     private static final String SUBS_PACKAGE = "projekt.substratum";
 
     private ListPreference mSystemThemeStyle;
+    private IStatusBarService mStatusBarService;
 
     public SystemThemePreferenceController(Context context) {
         super(context);
@@ -81,31 +85,15 @@ public class SystemThemePreferenceController extends AbstractPreferenceControlle
             Settings.System.putInt(mContext.getContentResolver(), Settings.System.SYSTEM_THEME, Integer.valueOf(value));
             int valueIndex = mSystemThemeStyle.findIndexOfValue(value);
             mSystemThemeStyle.setSummary(mSystemThemeStyle.getEntries()[valueIndex]);
-            try {
-                reload();
-            }catch (Exception ignored){
+            IStatusBarService statusBarService = IStatusBarService.Stub.asInterface(ServiceManager.checkService(Context.STATUS_BAR_SERVICE));
+            if (statusBarService != null) {
+                try {
+                    statusBarService.restartUI();
+                } catch (RemoteException e) {
+                    // do nothing.
+                }
             }
         }
         return true;
-    }
-    private void reload(){
-        Intent intent2 = new Intent(Intent.ACTION_MAIN);
-        intent2.addCategory(Intent.CATEGORY_HOME);
-        intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        mContext.startActivity(intent2);
-        Toast.makeText(mContext, R.string.applying_theme_toast, Toast.LENGTH_SHORT).show();
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-              @Override
-              public void run() {
-                  Intent intent = new Intent(Intent.ACTION_MAIN);
-                  intent.setClassName("com.android.settings",
-                        "com.android.settings.Settings$DisplaySettingsActivity");
-                  intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
-                  intent.putExtra(SettingsDrawerActivity.EXTRA_SHOW_MENU, true);
-                  mContext.startActivity(intent);
-                  Toast.makeText(mContext, R.string.theme_applied_toast, Toast.LENGTH_SHORT).show();
-              }
-        }, 2000);
     }
 }
