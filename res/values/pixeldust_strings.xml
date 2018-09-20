@@ -121,5 +121,18 @@
     <!-- Smart Pixels -->
     <string name="smart_pixels_settings_title">Smart Pixels</string>
 
+    <!-- Pixel Dust Settings -->
+    <string name="pd_preferences_buttons_title">Buttons</string>
+    <string name="pd_preferences_gestures_title">Gestures</string>
+    <string name="pd_preferences_lockscreen_title">Lockscreen Settings</string>
+    <string name="pd_preferences_misc_title">Miscellaneous</string>
+    <string name="pd_preferences_navbar_title">Navigation Bar</string>
+    <string name="pd_preferences_notifications_title">Notifications</string>
+    <string name="pd_preferences_powermenu_title">Powermenu Settings</string>
+    <string name="pd_preferences_quicksettings_title">Quick Settings</string>
+    <string name="pd_preferences_recents_title">Recents Settings</string>
+    <string name="pd_preferences_statusbar_title">Statusbar Settings</string>
+    <string name="pd_preferences_volume_title">Volume Settings</string>
+
 </resources>
 

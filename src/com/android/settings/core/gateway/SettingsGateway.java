@@ -138,7 +138,17 @@ import com.android.settings.wifi.calling.WifiCallingSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 
 import com.pixeldust.settings.PixelDustSettings;
+import com.pixeldust.settings.fragments.ButtonSettings;
+import com.pixeldust.settings.fragments.PDGestureSettings;
+import com.pixeldust.settings.fragments.LockScreenSettings;
+import com.pixeldust.settings.fragments.MiscSettings;
+import com.pixeldust.settings.fragments.NavigationBarSettings;
+import com.pixeldust.settings.fragments.NotificationsSettings;
+import com.pixeldust.settings.fragments.QuickSettings;
+import com.pixeldust.settings.fragments.RecentsSettings;
 import com.pixeldust.settings.fragments.SmartPixels;
+import com.pixeldust.settings.fragments.StatusBarSettings;
+import com.pixeldust.settings.fragments.VolumeSettings;
 
 public class SettingsGateway {
 
@@ -265,7 +275,17 @@ public class SettingsGateway {
             ToggleBackupSettingFragment.class.getName(),
             PreviouslyConnectedDeviceDashboardFragment.class.getName(),
             PixelDustSettings.class.getName(),
+            ButtonSettings.class.getName(),
+            PDGestureSettings.class.getName(),
+            LockScreenSettings.class.getName(),
+            MiscSettings.class.getName(),
+            NavigationBarSettings.class.getName(),
+            NotificationsSettings.class.getName(),
+            QuickSettings.class.getName(),
+            RecentsSettings.class.getName(),
             SmartPixels.class.getName(),
+            StatusBarSettings.class.getName(),
+            VolumeSettings.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -305,6 +325,16 @@ public class SettingsGateway {
             Settings.EnterprisePrivacySettingsActivity.class.getName(),
             Settings.MyDeviceInfoActivity.class.getName(),
             Settings.PixelDustSettingsActivity.class.getName(),
+            Settings.ButtonSettingsActivity.class.getName(),
+            Settings.PDGestureSettingsActivity.class.getName(),
+            Settings.LockScreenSettingsActivity.class.getName(),
+            Settings.MiscSettingsActivity.class.getName(),
+            Settings.NavigationBarSettingsActivity.class.getName(),
+            Settings.NotificationsSettingsActivity.class.getName(),
+            Settings.QuickSettingsActivity.class.getName(),
+            Settings.RecentsSettingsActivity.class.getName(),
             Settings.SmartPixelsActivity.class.getName(),
+            Settings.StatusBarSettingsActivity.class.getName(),
+            Settings.VolumeSettingsActivity.class.getName(),
     };
 }

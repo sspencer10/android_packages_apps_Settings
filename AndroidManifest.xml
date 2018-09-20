@@ -3353,6 +3353,102 @@
                 android:resource="@string/pixeldust_settings_summary"/>
         </activity>
 
+        <!-- Button Settings -->
+        <activity android:name="Settings$ButtonSettingsActivity"
+                  android:label="@string/pd_preferences_buttons_title"
+                  android:taskAffinity="com.android.settings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.pixeldust.settings.fragments.ButtonSettings" />
+        </activity>
+
+        <!-- Gesture Settings -->
+        <activity android:name="Settings$PDGestureSettingsActivity"
+                  android:label="@string/pd_preferences_gestures_title"
+                  android:taskAffinity="com.android.settings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.pixeldust.settings.fragments.PDGestureSettings" />
+        </activity>
+
+        <!-- Lockscreen Settings -->
+        <activity android:name="Settings$LockScreenSettingsActivity"
+                  android:label="@string/pd_preferences_lockscreen_title"
+                  android:taskAffinity="com.android.settings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.pixeldust.settings.fragments.LockScreenSettings" />
+        </activity>
+
+        <!-- Misc Settings -->
+        <activity android:name="Settings$MiscSettingsActivity"
+                  android:label="@string/pd_preferences_misc_title"
+                  android:taskAffinity="com.android.settings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.pixeldust.settings.fragments.MiscSettings" />
+        </activity>
+
+        <!-- Navigation Bar -->
+        <activity android:name="Settings$NavigationBarSettingsActivity"
+                  android:label="@string/pd_preferences_navbar_title"
+                  android:taskAffinity="com.android.settings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.pixeldust.settings.fragments.NavigationBarSettings" />
+        </activity>
+
+        <!-- Notification Settings -->
+        <activity android:name="Settings$NotificationsSettingsActivity"
+                  android:label="@string/pd_preferences_notifications_title"
+                  android:taskAffinity="com.android.settings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.pixeldust.settings.fragments.NotificationsSettings" />
+        </activity>
+
+        <!-- Quick Settings -->
+        <activity android:name="Settings$QuickSettingsActivity"
+                  android:label="@string/pd_preferences_quicksettings_title"
+                  android:taskAffinity="com.android.settings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.pixeldust.settings.fragments.QuickSettings" />
+        </activity>
+
+        <!-- Recents Settings -->
+        <activity android:name="Settings$RecentsSettingsActivity"
+                  android:label="@string/pd_preferences_recents_title"
+                  android:taskAffinity="com.android.settings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.pixeldust.settings.fragments.RecentsSettings" />
+        </activity>
+
         <!-- Smart Pixels -->
         <activity android:name="Settings$SmartPixelsActivity"
                 android:label="@string/smart_pixels_settings_title">
@@ -3363,6 +3459,33 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.pixeldust.settings.fragments.SmartPixels" />
         </activity>
+
+        <!-- Statusbar Settings -->
+        <activity android:name="Settings$StatusBarSettingsActivity"
+                  android:label="@string/pd_preferences_statusbar_title"
+                  android:taskAffinity="com.android.settings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.pixeldust.settings.fragments.StatusBarSettings" />
+        </activity>
+
+        <!-- Volume Settings -->
+        <activity android:name="Settings$VolumeSettingsActivity"
+                  android:label="@string/pd_preferences_volume_title"
+                  android:taskAffinity="com.android.settings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.pixeldust.settings.fragments.VolumeSettings" />
+        </activity>
+
+        <!-- Changelog -->
+	<activity android:name=".deviceinfo.Changelog" />
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
 </manifest>
