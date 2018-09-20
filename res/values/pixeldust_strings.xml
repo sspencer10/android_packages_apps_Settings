@@ -192,7 +192,9 @@
     <string name="full_gesture_mode_dt2s_title">Enable double tap to sleep</string>
     <string name="full_gesture_mode_dt2s_summary">Tap on an empty navbar space but not the home button to switch the screen off.</string>
 
-    <!-- SystemUI theme -->
+    <!-- Themes -->
+    <string name="applying_theme_toast">Applying theme, please wait...</string>
+    <string name="theme_applied_toast">Theme applied!</string>
     <string name="systemui_theme_black">Black</string>
     <string name="systemui_theme_shishunights">Shishu Nights</string>
     <string name="systemui_theme_chocolate">Chocolate</string>
