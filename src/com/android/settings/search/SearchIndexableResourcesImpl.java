@@ -98,6 +98,19 @@ import com.android.settings.wfd.WifiDisplaySettings;
 import com.android.settings.wifi.ConfigureWifiSettings;
 import com.android.settings.wifi.WifiSettings;
 
+import com.pixeldust.settings.PixelDustSettings;
+import com.pixeldust.settings.fragments.ButtonSettings;
+import com.pixeldust.settings.fragments.PDGestureSettings;
+import com.pixeldust.settings.fragments.LockScreenSettings;
+import com.pixeldust.settings.fragments.MiscSettings;
+import com.pixeldust.settings.fragments.NavigationBarSettings;
+import com.pixeldust.settings.fragments.NotificationsSettings;
+import com.pixeldust.settings.fragments.QuickSettings;
+import com.pixeldust.settings.fragments.RecentsSettings;
+import com.pixeldust.settings.fragments.SmartPixels;
+import com.pixeldust.settings.fragments.StatusBarSettings;
+import com.pixeldust.settings.fragments.VolumeSettings;
+
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
@@ -191,6 +204,18 @@ public class SearchIndexableResourcesImpl implements SearchIndexableResources {
         addIndex(RecentLocationRequestSeeAllFragment.class);
         addIndex(PreviouslyConnectedDeviceDashboardFragment.class);
         addIndex(BluetoothDashboardFragment.class);
+        addIndex(PixelDustSettings.class);
+        addIndex(ButtonSettings.class);
+        addIndex(PDGestureSettings.class);
+        addIndex(LockScreenSettings.class);
+        addIndex(MiscSettings.class);
+        addIndex(NavigationBarSettings.class);
+        addIndex(NotificationsSettings.class);
+        addIndex(QuickSettings.class);
+        addIndex(RecentsSettings.class);
+        addIndex(SmartPixels.class);
+        addIndex(StatusBarSettings.class);
+        addIndex(VolumeSettings.class);
     }
 
     @Override
