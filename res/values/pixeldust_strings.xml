@@ -158,7 +158,7 @@
     <string name="ambient_recognition_interval_120sec">2 minutes</string>
 
     <!-- SystemUI theme -->
-    <string name="systemui_theme_style_title">SystemUI Theme</string>
+    <string name="systemui_theme_style_title">Background color</string>
     <string name="systemui_theme_style_auto">Automatic (Wallpaper based)</string>
     <string name="systemui_theme_style_light">Light</string>
     <string name="systemui_theme_style_dark">Dark</string>
@@ -182,5 +182,14 @@
     <string name="expanded_desktop_style">Expanded desktop style</string>
     <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
     <string name="expanded_desktop_title">Expanded desktop options</string>
+
+    <!-- Accent picker -->
+    <string name="theme_category_title">System theme</string>
+    <string name="accent_picker_dialog_title">Select an accent color</string>
+    <string name="theme_accent_picker_title">Accent color</string>
+    <string name="theme_accent_picker_summary">Select system theme accent color</string>
+    <string name="theme_accent_picker_default">Default</string>
+    <string name="accent_picker_material_colors">Material palette</string>
+    <string name="accent_picker_custom_colors">User requested</string>
 
 </resources>
