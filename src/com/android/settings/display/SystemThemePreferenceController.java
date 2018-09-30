@@ -49,7 +49,7 @@ public class SystemThemePreferenceController extends AbstractPreferenceControlle
 
     @Override
     public boolean isAvailable() {
-        return true;
+        return !PixeldustUtils.isPackageInstalled(mContext, SUBS_PACKAGE);
     }
 
     @Override

@@ -112,9 +112,15 @@
   <string name="ambient_recognition_lockscreen_title">Now Playing zusätzlich anzeigen</string>
   <string name="ambient_recognition_lockscreen_summary">Auf dem Sperrbildschirm</string>
 
-    <!-- SystemUI theme -->
-    <string name="systemui_theme_black">Schwarz</string>
-    <string name="systemui_theme_shishunights">Shishu Nights</string>
-    <string name="systemui_theme_chocolate">Schokolade</string>
+  <!-- SystemUI theme -->
+  <string name="systemui_theme_black">Schwarz</string>
+  <string name="systemui_theme_shishunights">Shishu Nights</string>
+  <string name="systemui_theme_chocolate">Schokolade</string>
+  <string name="accent_picker_dialog_title">Akzentfarbe wählen</string>
+  <string name="theme_accent_picker_title">Akzentfarbe</string>
+  <string name="theme_accent_picker_summary">Akzentfarbe für Gerätedesign wählen</string>
+  <string name="theme_accent_picker_default">Standard</string>
+  <string name="accent_picker_material_colors">Material Farbpalette</string>
+  <string name="accent_picker_custom_colors">Benutzerdefiniert</string>
 
 </resources>
