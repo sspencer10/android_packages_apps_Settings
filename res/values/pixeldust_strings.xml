@@ -193,19 +193,19 @@
     <string name="full_gesture_mode_dt2s_summary">Tap on an empty navbar space but not the home button to switch the screen off.</string>
 
     <!-- Themes -->
-    <string name="applying_theme_toast">Applying theme, please wait...</string>
-    <string name="theme_applied_toast">Theme applied!</string>
+    <string name="theme_category_title">Theme options</string>
+    <string name="disable_themes_installed_title">System themes are unavailable to avoid conflicts with Substratum. Uninstall it if you wish to use these themes instead.</string>
+    <string name="disable_accents_installed_title">Accent picker is unavailable to avoid conflicts with Substratum. Uninstall it if you wish to use the accent picker.</string>
     <string name="systemui_theme_black">Black</string>
     <string name="systemui_theme_shishunights">Shishu Nights</string>
     <string name="systemui_theme_chocolate">Chocolate</string>
-
-    <!-- System theme -->
     <string name="applying_theme_toast">Applying theme, please wait...</string>
     <string name="theme_applied_toast">Theme applied!</string>
-
     <string name="accent_picker_dialog_title">Select an accent color</string>
     <string name="theme_accent_picker_title">Accent color</string>
     <string name="theme_accent_picker_summary">Select system theme accent color</string>
     <string name="theme_accent_picker_default">Default</string>
+    <string name="accent_picker_material_colors">Material palette</string>
+    <string name="accent_picker_custom_colors">User requested</string>
 
 </resources>
