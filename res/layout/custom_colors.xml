@@ -82,4 +82,49 @@
         android:layout_gravity="fill_horizontal"
         android:background="#FFCC00" />
 
+    <Button
+        android:id="@+id/candyredAccent"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_columnWeight="1"
+        android:gravity="center"
+        android:layout_gravity="fill_horizontal"
+        android:background="#FF1744" />
+
+    <Button
+        android:id="@+id/paleredAccent"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_columnWeight="1"
+        android:gravity="center"
+        android:layout_gravity="fill_horizontal"
+        android:background="#F05361" />
+
+    <Button
+        android:id="@+id/extendedgreenAccent"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_columnWeight="1"
+        android:gravity="center"
+        android:layout_gravity="fill_horizontal"
+        android:background="#21ef8b" />
+
+    <Button
+        android:id="@+id/paleblueAccent"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_columnWeight="1"
+        android:gravity="center"
+        android:layout_gravity="fill_horizontal"
+        android:background="#A1B6ED" />
+
+    <Button
+        android:id="@+id/jadegreenAccent"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_columnWeight="1"
+        android:gravity="center"
+        android:layout_gravity="fill_horizontal"
+        android:background="#9ABC98" />
+
 </LinearLayout>
