@@ -134,12 +134,14 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
         setAccent("19", bluegreyAccent);
 
         Button blackAccent = mView.findViewById(R.id.blackAccent);
-        // Change the accent picker button depending on whether or not the dark theme is applied
+        // Change the accent picker button depending on whether or not a dark theme is applied
         blackAccent.setBackgroundColor(getResources().getColor(
-                ThemeAccentUtils.isUsingDarkTheme(mOverlayManager, mCurrentUserId) ? R.color.accent_picker_white_accent : R.color.accent_picker_dark_accent));
+                (ThemeAccentUtils.isUsingDarkTheme(mOverlayManager, mCurrentUserId) || ThemeAccentUtils.isUsingBlackTheme(mOverlayManager, mCurrentUserId) || ThemeAccentUtils.isUsingShishuNightsTheme(mOverlayManager, mCurrentUserId) || ThemeAccentUtils.isUsingChocolateTheme(mOverlayManager, mCurrentUserId)) ? R.color.accent_picker_white_accent : R.color.accent_picker_dark_accent));
         blackAccent.setBackgroundTintList(getResources().getColorStateList(
-                ThemeAccentUtils.isUsingDarkTheme(mOverlayManager, mCurrentUserId) ? R.color.accent_picker_white_accent : R.color.accent_picker_dark_accent));
+                (ThemeAccentUtils.isUsingDarkTheme(mOverlayManager, mCurrentUserId) || ThemeAccentUtils.isUsingBlackTheme(mOverlayManager, mCurrentUserId) || ThemeAccentUtils.isUsingShishuNightsTheme(mOverlayManager, mCurrentUserId) || ThemeAccentUtils.isUsingChocolateTheme(mOverlayManager, mCurrentUserId)) ? R.color.accent_picker_white_accent : R.color.accent_picker_dark_accent));
         setAccent("20", blackAccent);
+
+        //"21" reserved for whiteAccent
 
         Button userAccentOne = mView.findViewById(R.id.userAccentOne);
         setAccent("22", userAccentOne);
@@ -161,6 +163,22 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
 
         Button userAccentSeven = mView.findViewById(R.id.userAccentSeven);
         setAccent("28", userAccentSeven);
+
+        Button candyredAccent = mView.findViewById(R.id.candyredAccent);
+        setAccent("29", candyredAccent);
+
+        Button paleredAccent = mView.findViewById(R.id.paleredAccent);
+        setAccent("30", paleredAccent);
+
+        Button extendedgreenAccent = mView.findViewById(R.id.extendedgreenAccent);
+        setAccent("31", extendedgreenAccent);
+
+        Button paleblueAccent = mView.findViewById(R.id.paleblueAccent);
+        setAccent("32", paleblueAccent);
+
+        Button jadegreenAccent = mView.findViewById(R.id.jadegreenAccent);
+        setAccent("33", jadegreenAccent);
+
     }
 
     @Override
