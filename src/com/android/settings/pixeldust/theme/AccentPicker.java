@@ -364,6 +364,81 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
             });
         }
 
+        Button candyredAccent = null;
+        if (mView != null) {
+            candyredAccent = mView.findViewById(R.id.candyredAccent);
+        }
+        if (candyredAccent != null) {
+            candyredAccent.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Settings.System.putIntForUser(resolver,
+                            Settings.System.ACCENT_PICKER, 20, UserHandle.USER_CURRENT);
+                    dismiss();
+                }
+            });
+        }
+
+        Button paleredAccent = null;
+        if (mView != null) {
+            paleredAccent = mView.findViewById(R.id.paleredAccent);
+        }
+        if (paleredAccent != null) {
+            paleredAccent.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Settings.System.putIntForUser(resolver,
+                            Settings.System.ACCENT_PICKER, 21, UserHandle.USER_CURRENT);
+                    dismiss();
+                }
+            });
+        }
+
+        Button extendedgreenAccent = null;
+        if (mView != null) {
+            extendedgreenAccent = mView.findViewById(R.id.extendedgreenAccent);
+        }
+        if (extendedgreenAccent != null) {
+            extendedgreenAccent.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Settings.System.putIntForUser(resolver,
+                            Settings.System.ACCENT_PICKER, 22, UserHandle.USER_CURRENT);
+                    dismiss();
+                }
+            });
+        }
+
+        Button paleblueAccent = null;
+        if (mView != null) {
+            paleblueAccent = mView.findViewById(R.id.paleblueAccent);
+        }
+        if (paleblueAccent != null) {
+            paleblueAccent.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Settings.System.putIntForUser(resolver,
+                            Settings.System.ACCENT_PICKER, 23, UserHandle.USER_CURRENT);
+                    dismiss();
+                }
+            });
+        }
+
+        Button jadegreenAccent = null;
+        if (mView != null) {
+            jadegreenAccent = mView.findViewById(R.id.jadegreenAccent);
+        }
+        if (jadegreenAccent != null) {
+            jadegreenAccent.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Settings.System.putIntForUser(resolver,
+                            Settings.System.ACCENT_PICKER, 24, UserHandle.USER_CURRENT);
+                    dismiss();
+                }
+            });
+        }
+
         Button blackAccent = null;
         if (mView != null) {
             blackAccent = mView.findViewById(R.id.blackAccent);
@@ -385,7 +460,7 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
                 @Override
                 public void onClick(View v) {
                     Settings.System.putIntForUser(resolver,
-                            Settings.System.ACCENT_PICKER, 20, UserHandle.USER_CURRENT);
+                            Settings.System.ACCENT_PICKER, 25, UserHandle.USER_CURRENT);
                     dismiss();
                 }
             });
@@ -410,7 +485,7 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
     private boolean isUsingDarkTheme() {
         OverlayInfo themeInfo = null;
         try {
-            themeInfo = mOverlayManager.getOverlayInfo("com.android.system.theme.dark.liquid",
+            themeInfo = mOverlayManager.getOverlayInfo("com.android.system.theme.dark",
                     UserHandle.USER_CURRENT);
         } catch (RemoteException e) {
             e.printStackTrace();
@@ -422,7 +497,7 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
     private boolean isUsingBlackTheme() {
         OverlayInfo themeInfo = null;
         try {
-            themeInfo = mOverlayManager.getOverlayInfo("com.android.system.theme.black.liquid",
+            themeInfo = mOverlayManager.getOverlayInfo("com.android.system.theme.black",
                     UserHandle.USER_CURRENT);
         } catch (RemoteException e) {
             e.printStackTrace();
