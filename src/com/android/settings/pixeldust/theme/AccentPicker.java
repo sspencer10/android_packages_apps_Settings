@@ -443,7 +443,7 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
         if (mView != null) {
             blackAccent = mView.findViewById(R.id.blackAccent);
             // Change the accent picker button depending on whether or not the dark/black theme is applied
-            if (isUsingDarkTheme() || isUsingBlackTheme()) {
+            if (isUsingDarkTheme() || isUsingBlackTheme() || isUsingShishuNightsTheme() || isUsingChocolateTheme()) {
             blackAccent.setBackgroundColor(getResources().getColor(
                     R.color.accent_picker_white_accent));
             blackAccent.setBackgroundTintList(getResources().getColorStateList(
@@ -498,6 +498,30 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
         OverlayInfo themeInfo = null;
         try {
             themeInfo = mOverlayManager.getOverlayInfo("com.android.system.theme.black",
+                    UserHandle.USER_CURRENT);
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+        return themeInfo != null && themeInfo.isEnabled();
+    }
+
+    // Check for the shishunights theme overlay
+    public boolean isUsingShishuNightsTheme() {
+        OverlayInfo themeInfo = null;
+        try {
+            themeInfo = mOverlayManager.getOverlayInfo("com.android.system.theme.shishunights",
+                    UserHandle.USER_CURRENT);
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+        return themeInfo != null && themeInfo.isEnabled();
+    }
+
+    // Check for the chocolate theme overlay
+    public boolean isUsingChocolateTheme() {
+        OverlayInfo themeInfo = null;
+        try {
+            themeInfo = mOverlayManager.getOverlayInfo("com.android.system.theme.chocolate",
                     UserHandle.USER_CURRENT);
         } catch (RemoteException e) {
             e.printStackTrace();
