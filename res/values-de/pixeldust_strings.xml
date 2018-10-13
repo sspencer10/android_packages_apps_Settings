@@ -105,5 +105,11 @@
   <string name="changelog_summary">Seit dem letzten Update</string>
   <string name="changelog_error">Laden der Änderungshistorie fehlgeschlagen</string>
 
-</resources>
+  <!-- Ambient Play -->
+  <string name="ambient_play_cat">Now Playing</string>
+  <string name="ambient_recognition_title">Now Playing aktivieren</string>
+  <string name="ambient_recognition_summary">Musik, die im Hintergrund gespielt wird, wird erkannt und Titel sowie Künstler auf dem Inaktivitätsdisplay angezeigt. Hierdurch erhöht sich die Akku- und Datennutzung.</string>
+  <string name="ambient_recognition_lockscreen_title">Now Playing zusätzlich anzeigen</string>
+  <string name="ambient_recognition_lockscreen_summary">Auf dem Sperrbildschirm</string>
 
+</resources>
