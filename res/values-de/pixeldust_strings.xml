@@ -194,4 +194,11 @@
   <string name="fp_swipe_to_dismiss_notifications_title">Benachr. durch seitliches Wischen schließen</string>
   <string name="fp_swipe_to_dismiss_notifications_summary">Nach links oder rechts über den Fingerabdrucksensor wischen, um Benachrichtingen zu schließen.</string>
 
+  <!-- QS tile styles -->
+  <string name="qs_tile_style_title">Schnelleinstellungen: Kacheln Stil</string>
+  <string name="qstile_default">Standard</string>
+  <string name="qstile_circle_trim">Kreis einfach umrandet</string>
+  <string name="qstile_dual_tone_circle">Kreis doppelt umrandet</string>
+  <string name="qstile_squircle_trim">Abgerundetes Quadrat</string>
+
 </resources>
