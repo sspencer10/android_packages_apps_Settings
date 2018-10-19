@@ -23,9 +23,13 @@
   <string name="pd_version">Pixel Dust Version</string>
   <string name="pd_version_default">Unbekannt</string>
 
-  <!-- PixelDust build date-->
-  <string name="pd_build_date">Pixel Dust Erstellungsdatum</string>
-  <string name="pd_build_date_default">2017-08-01-0000</string>
+  <!-- OTA -->
+  <string name="pdupdate_settings_title">Pixel Dust Updates</string>
+  <string name="pdupdate_settings_summary">Nach neuer Version suchen</string>
+
+  <!-- Clang version -->
+  <string name="clang_version">Clang</string>
+  <string name="clang_version_default">Unbekannt</string>
 
   <!-- Quick unlock -->
   <string name="unlock_quick_unlock_control_title">Schnelles Entsperren</string>
@@ -105,5 +109,89 @@
   <string name="changelog_summary">Seit dem letzten Update</string>
   <string name="changelog_error">Laden der Änderungshistorie fehlgeschlagen</string>
 
-</resources>
+  <!-- Smart Pixels -->
+  <string name="smart_pixels_settings_title">Smart Pixels</string>
 
+  <!-- Pixel Dust Settings -->
+  <string name="pd_preferences_animations_title">Animationen</string>
+  <string name="pd_preferences_buttons_title">Tasten</string>
+  <string name="pd_preferences_gestures_title">Gesten</string>
+  <string name="pd_preferences_lockscreen_title">Sperrbildschirm</string>
+  <string name="pd_preferences_misc_title">Sonstiges</string>
+  <string name="pd_preferences_navbar_title">Navigationsleiste</string>
+  <string name="pd_preferences_notifications_title">Benachrichtigungen</string>
+  <string name="pd_preferences_powermenu_title">An/Aus-Tasten Menü</string>
+  <string name="pd_preferences_quicksettings_title">Schnelleinstellungen</string>
+  <string name="pd_preferences_recents_title">Anwendungsverlauf</string>
+  <string name="pd_preferences_statusbar_title">Statusleiste</string>
+  <string name="pd_preferences_volume_title">Lautstärke-Taste konfigurieren</string>
+
+  <!-- Battery stats reset -->
+  <string name="battery_stats_reset">Statistiken zurücksetzen</string>
+  <string name="battery_stats_message">Der Akkuverlauf wird zurückgesetzt</string>
+
+  <!-- Ambient Play -->
+  <string name="ambient_play_cat">Now Playing</string>
+  <string name="ambient_recognition_title">Now Playing aktivieren</string>
+  <string name="ambient_recognition_summary">Musik, die im Hintergrund gespielt wird, wird erkannt und Titel sowie Künstler auf dem Inaktivitätsdisplay angezeigt. Hierdurch erhöht sich die Akku- und Datennutzung.</string>
+  <string name="ambient_recognition_lockscreen_title">Now Playing zusätzlich anzeigen</string>
+  <string name="ambient_recognition_lockscreen_summary">Auf dem Sperrbildschirm</string>
+  <string name="ambient_recognition_interval_summary_seconds">Das Intervall zum Erkennen neuer Musiktitel ist eingestellt auf <xliff:g id="number">%d</xliff:g> Sekunden</string>
+  <string name="ambient_recognition_interval_summary_one_minute_seconds">Das Intervall zum Erkennen neuer Musiktitel ist eingestellt auf 1 Minute <xliff:g id="number">%d</xliff:g> Sekunden</string>
+  <string name="ambient_recognition_interval_summary_one_minute">Das Intervall zum Erkennen neuer Musiktitel ist eingestellt auf 1 Minute</string>
+  <string name="ambient_recognition_interval_summary_two_minutes">Das Intervall zum Erkennen neuer Musiktitel ist eingestellt auf 2 Minuten</string>
+  <string name="ambient_recognition_interval_title">Suchintervall</string>
+  <string name="ambient_recognition_interval_20sec">20 Sekunden</string>
+  <string name="ambient_recognition_interval_40sec">40 Sekunden</string>
+  <string name="ambient_recognition_interval_60sec">1 Minute</string>
+  <string name="ambient_recognition_interval_80sec">1 Minute 20 Sekunden</string>
+  <string name="ambient_recognition_interval_100sec">1 Minute 40 Sekunden</string>
+  <string name="ambient_recognition_interval_120sec">2 Minuten (Standard)</string>
+
+  <!-- SystemUI theme -->
+  <string name="systemui_theme_style_title">Hintergrundfarbe</string>
+  <string name="systemui_theme_style_auto">Automatisch (abgeleitet vom Hintergrundbild)</string>
+  <string name="systemui_theme_style_light">Hell</string>
+  <string name="systemui_theme_style_dark">Dunkelgrau</string>
+  <string name="systemui_theme_style_black">Schwarz</string>
+  <string name="systemui_theme_style_shishunights">Shishu Nights</string>
+  <string name="systemui_theme_style_chocolate">Schokolade</string>
+  <string name="applying_theme_toast">Das System Design wird aktualisiert, bitte warten...</string>
+  <string name="theme_applied_toast">Design angewendet.</string>
+
+  <!-- Expanded desktop -->
+  <string name="expanded_desktop_pref_title">Erweiterter Desktopmodus</string>
+  <string name="expanded_desktop_pref_summary">Den erweiterten Modus global oder per App konfigurieren</string>
+  <string name="expanded_hide_nothing">Nichts ausblenden</string>
+  <string name="expanded_hide_status">Statusleiste ausblenden</string>
+  <string name="expanded_hide_navigation">Navigationsleiste ausblenden</string>
+  <string name="expanded_hide_both">Beides verstecken</string>
+  <string name="expanded_nothing_to_show">Um eine benutzerdefinierte Per-App-Konfiguration für den erweiterten Modus hinzuzufügen, schalten Sie \"Für alle aktiviert\" auf aus</string>
+  <string name="expanded_desktop_state">Erweiterter Status</string>
+  <string name="expanded_enabled_for_all">Für alle aktiviert</string>
+  <string name="expanded_user_configurable">Vom Nutzer konfigurierbar</string>
+  <string name="expanded_desktop_style">Aussehen des erweiterten Desktopmodus</string>
+  <string name="expanded_desktop_style_description">Standardaussehen des erweiterten Desktopmodus wählen</string>
+  <string name="expanded_desktop_title">Optionen für den erweiterten Desktopmodus</string>
+
+  <!-- Accent picker -->
+  <string name="theme_category_title">System Design</string>
+  <string name="accent_picker_dialog_title">Akzentfarbe auswählen</string>
+  <string name="theme_accent_picker_title">Akzentfarbe</string>
+  <string name="theme_accent_picker_summary">Wählen Sie eine Akzentfarbe für das System Design</string>
+  <string name="theme_accent_picker_default">Standard</string>
+  <string name="accent_picker_material_colors">Material Farbpalette</string>
+  <string name="accent_picker_custom_colors">Benutzerdefiniert</string>
+
+  <!-- Weather parts -->
+  <string name="weather_title">Wetter</string>
+
+  <!-- Ambient display battery percentage --> 
+  <string name="ambient_battery_percent_title">Akkuladestand am unteren Rand anzeigen</string> 
+  <string name="ambient_battery_percent_summary">Akkuladestand als Prozentwert auf dem Inaktivitätsdisplay anzeigen</string>
+
+  <!-- Fingerprint swipe sideways -->
+  <string name="fp_swipe_to_dismiss_notifications_title">Benachr. durch seitliches Wischen schließen</string>
+  <string name="fp_swipe_to_dismiss_notifications_summary">Nach links oder rechts über den Fingerabdrucksensor wischen, um Benachrichtingen zu schließen.</string>
+
+</resources>

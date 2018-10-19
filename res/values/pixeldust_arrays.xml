@@ -70,5 +70,54 @@
         <item>#FFFF0000</item>
     </string-array>
 
-</resources>
+    <!-- Ambient Play scan interval -->
+    <string-array name="ambient_recognition_interval_entries">
+        <item>@string/ambient_recognition_interval_20sec</item>
+        <item>@string/ambient_recognition_interval_40sec</item>
+        <item>@string/ambient_recognition_interval_60sec</item>
+        <item>@string/ambient_recognition_interval_80sec</item>
+        <item>@string/ambient_recognition_interval_100sec</item>
+        <item>@string/ambient_recognition_interval_120sec</item>
+    </string-array>
 
+    <string-array name="ambient_recognition_interval_values" translatable="false">
+        <item>20000</item>
+        <item>40000</item>
+        <item>60000</item>
+        <item>80000</item>
+        <item>100000</item>
+        <item>120000</item>
+    </string-array>
+
+    <!-- SystemUI theme -->
+    <string-array name="systemui_theme_style_entries" translatable="false">
+        <item>@string/systemui_theme_style_auto</item>
+        <item>@string/systemui_theme_style_light</item>
+        <item>@string/systemui_theme_style_dark</item>
+        <item>@string/systemui_theme_style_black</item>
+        <item>@string/systemui_theme_style_shishunights</item>
+        <item>@string/systemui_theme_style_chocolate</item>
+    </string-array>
+
+    <string-array name="systemui_theme_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <!-- Expanded Desktop -->
+    <string-array name="expanded_desktop_entries" translatable="false">
+        <item>@string/expanded_hide_both</item>
+        <item>@string/expanded_hide_status</item>
+        <item>@string/expanded_hide_navigation</item>
+    </string-array>
+     <string-array name="expanded_desktop_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+</resources>
