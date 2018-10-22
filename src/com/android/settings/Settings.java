@@ -165,6 +165,22 @@ public class Settings extends SettingsActivity {
     public static class StorageDashboardActivity extends SettingsActivity {}
     public static class AccountDashboardActivity extends SettingsActivity {}
     public static class SystemDashboardActivity extends SettingsActivity {}
-
+    public static class AmbientDisplayActivity extends SettingsActivity { /* empty */ }
+    public static class AmbientPlayActivity extends SettingsActivity { /* empty */ }
+    public static class ExpandedDesktopActivity extends SettingsActivity { /* empty */ }
     public static class PixelDustSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class ButtonSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class PDGestureSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class LockScreenSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class MiscSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class NavigationBarSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class NotificationsSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class QuickSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class RecentsSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class SmartPixelsActivity extends SettingsActivity { /* empty */ }
+    public static class StatusBarSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class VolumeSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class OmniJawsSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class PieControlSettingsActivity extends SettingsActivity { /* empty */ }
+
 }

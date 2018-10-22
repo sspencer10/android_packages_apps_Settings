@@ -23,6 +23,10 @@
     <string name="pd_version">Pixel Dust version</string>
     <string name="pd_version_default">Unknown</string>
 
+    <!-- OTA -->
+    <string name="pdupdate_settings_title">Pixel Dust updates</string>
+    <string name="pdupdate_settings_summary">Check for new version</string>
+
     <!-- Clang version -->
     <string name="clang_version">Clang</string>
     <string name="clang_version_default">Unknown</string>
@@ -118,5 +122,89 @@
     <string name="changelog_summary">See the most recent commits</string>
     <string name="changelog_error">Unable to load changelog</string>
 
-</resources>
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_settings_title">Smart Pixels</string>
 
+    <!-- Pixel Dust Settings -->
+    <string name="pd_preferences_buttons_title">Buttons</string>
+    <string name="pd_preferences_gestures_title">Gestures</string>
+    <string name="pd_preferences_lockscreen_title">Lockscreen Settings</string>
+    <string name="pd_preferences_misc_title">Miscellaneous</string>
+    <string name="pd_preferences_navbar_title">Navigation Bar</string>
+    <string name="pd_preferences_notifications_title">Notifications</string>
+    <string name="pd_preferences_powermenu_title">Powermenu Settings</string>
+    <string name="pd_preferences_quicksettings_title">Quick Settings</string>
+    <string name="pd_preferences_recents_title">Recents Settings</string>
+    <string name="pd_preferences_statusbar_title">Statusbar Settings</string>
+    <string name="pd_preferences_volume_title">Volume Settings</string>
+
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Reset stats</string>
+    <string name="battery_stats_message">Battery history stats are going to be reset</string>
+    <string name="ok_string">Ok</string>
+
+    <!-- Ambient Play -->
+    <string name="ambient_play_cat">Now Playing</string>
+    <string name="ambient_recognition_title">Enable Now Playing</string>
+    <string name="ambient_recognition_summary">Be notified of music being played around you. Will increase battery and data usage.</string>
+    <string name="ambient_recognition_lockscreen_title">Show Now Playing</string>
+    <string name="ambient_recognition_lockscreen_summary">On the lockscreen</string>
+    <string name="ambient_recognition_interval_summary_seconds">Interval for scanning of new songs is set to <xliff:g id="number">%d</xliff:g> seconds</string>
+    <string name="ambient_recognition_interval_summary_one_minute_seconds">Interval for scanning of new songs is set to 1 minute and <xliff:g id="number">%d</xliff:g> seconds</string>
+    <string name="ambient_recognition_interval_summary_one_minute">Interval for scanning of new songs is set to 1 minute</string>
+    <string name="ambient_recognition_interval_summary_two_minutes">Interval for scanning of new songs is set to 2 minutes</string>
+    <string name="ambient_recognition_interval_title">Scan interval</string>
+    <string name="ambient_recognition_interval_20sec">20 seconds</string>
+    <string name="ambient_recognition_interval_40sec">40 seconds</string>
+    <string name="ambient_recognition_interval_60sec">1 minute</string>
+    <string name="ambient_recognition_interval_80sec">1 minute 20 seconds</string>
+    <string name="ambient_recognition_interval_100sec">1 minute 40 seconds</string>
+    <string name="ambient_recognition_interval_120sec">2 minutes</string>
+
+    <!-- SystemUI theme -->
+    <string name="systemui_theme_style_title">Background color</string>
+    <string name="systemui_theme_style_auto">Automatic (Wallpaper based)</string>
+    <string name="systemui_theme_style_light">Light</string>
+    <string name="systemui_theme_style_dark">Dark</string>
+    <string name="systemui_theme_style_black">Black</string>
+    <string name="systemui_theme_style_shishunights">Shishu Nights</string>
+    <string name="systemui_theme_style_chocolate">Chocolate</string>
+    <string name="applying_theme_toast">Applying theme, please wait...</string>
+    <string name="theme_applied_toast">Theme applied!</string>
+
+    <!-- Expanded desktop -->
+    <string name="expanded_desktop_pref_title">Expanded desktop</string>
+    <string name="expanded_desktop_pref_summary">Set expanded desktop globally or per-app</string>
+    <string name="expanded_hide_nothing">Hide nothing</string>
+    <string name="expanded_hide_status">Hide status bar</string>
+    <string name="expanded_hide_navigation">Hide navigation bar</string>
+    <string name="expanded_hide_both">Hide both</string>
+    <string name="expanded_nothing_to_show">To add a custom per-app configuration for expanded state, set "Enabled for all" to the off position</string>
+    <string name="expanded_desktop_state">Expanded state</string>
+    <string name="expanded_enabled_for_all">Enabled for all</string>
+    <string name="expanded_user_configurable">User configurable</string>
+    <string name="expanded_desktop_style">Expanded desktop style</string>
+    <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
+    <string name="expanded_desktop_title">Expanded desktop options</string>
+
+    <!-- Accent picker -->
+    <string name="theme_category_title">System theme</string>
+    <string name="accent_picker_dialog_title">Select an accent color</string>
+    <string name="theme_accent_picker_title">Accent color</string>
+    <string name="theme_accent_picker_summary">Select system theme accent color</string>
+    <string name="theme_accent_picker_default">Default</string>
+    <string name="accent_picker_material_colors">Material palette</string>
+    <string name="accent_picker_custom_colors">User requested</string>
+
+    <!-- Weather parts -->
+    <string name="weather_title">Weather</string>
+
+    <!-- Ambient display battery percentage --> 
+    <string name="ambient_battery_percent_title">Battery level on bottom</string> 
+    <string name="ambient_battery_percent_summary">Enable to show battery percent while dozing</string>
+
+    <!-- Fingerprint swipe sideways -->
+    <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint to dismiss notifications</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">To dismiss your notifications, swipe left or right on the fingerprint sensor.</string>
+
+</resources>
