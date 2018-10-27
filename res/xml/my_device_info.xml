@@ -21,14 +21,7 @@
     android:key="my_device_info_pref_screen"
     android:title="@string/about_settings">
 
-    <!-- Pixeldust Logo comes first -->
-    <Preference
-        android:key="pd_logo"
-        android:order="0"
-        android:layout="@layout/pixeldust_logo"
-        settings:allowDividerAbove="true"/>
-
-    <!-- PixelDust OTA -->
+    <!-- PixelDust OTA 
     <Preference
         android:key="pd_updates"
         android:order="1"
@@ -37,14 +30,7 @@
         <intent android:action="android.intent.action.MAIN"
            android:targetPackage="com.pixeldust.ota"
            android:targetClass="com.pixeldust.ota.MainActivity" />
-    </Preference>
-
-    <!-- PixelDust version -->
-    <Preference
-        android:key="pd_version"
-        android:order="2"
-        android:title="@string/pd_version"
-        android:summary="@string/pd_version_default" />
+    </Preference>-->
 
     <!-- PixelDust build date -->
     <Preference
@@ -201,12 +187,12 @@
         android:title="@string/fcc_equipment_id"
         android:summary="@string/summary_placeholder"/>
 
-    <!-- Build number -->
+    <!-- Build number 
     <Preference
         android:key="build_number"
         android:order="43"
         android:title="@string/build_number"
-        android:summary="@string/summary_placeholder"
-        settings:allowDividerAbove="true"/>
+        android:summary="@string/custom_build_number"
+        settings:allowDividerAbove="true"/>-->
 
 </PreferenceScreen>
