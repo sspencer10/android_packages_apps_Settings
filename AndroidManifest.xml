@@ -3325,8 +3325,6 @@
         <service android:name=".fuelgauge.batterytip.AnomalyDetectionJobService"
                  android:permission="android.permission.BIND_JOB_SERVICE" />
 
-	<activity android:name=".deviceinfo.Changelog" />
-
         <!-- PixelDustSettings -->
         <activity android:name="Settings$PixelDustSettingsActivity"
             android:label="@string/pixeldust_settings_title"
@@ -3489,7 +3487,8 @@
         </activity>
 
         <!-- Changelog -->
-	<activity android:name=".deviceinfo.Changelog" />
+	<activity android:name=".deviceinfo.Changelog"
+		  android:label="@string/changelog_title" />
 
         <!-- Weather parts -->
         <activity android:name="Settings$OmniJawsSettingsActivity"
