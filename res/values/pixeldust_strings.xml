@@ -15,9 +15,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Steve -->
-    <string name="custom_build_number">Custom Firmware</string>
-
     <!-- PixelDust Settings strings -->
     <string name="pixeldust_settings_title">Personalization Settings</string>
     <string name="pixeldust_settings_summary">ROM features &amp; personalization</string>
