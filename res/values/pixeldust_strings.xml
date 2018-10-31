@@ -217,4 +217,7 @@
     <string name="qstile_oreo_squircle_trim">Squircle Trim (Oreo)</string>
     <string name="qstile_squircle_trim">Squircle Trim (Pie)</string>
 
+    <string name="full_gesture_mode_title">Enable full gesture mode</string>
+    <string name="full_gesture_mode_summary">This mode will disable also the back button and you will be able to trigger a back button action by a left swipe on navbar. Right swipe will still trigger the last-app action.</string>
+
 </resources>
