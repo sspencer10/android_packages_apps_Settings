@@ -112,4 +112,9 @@
   <string name="ambient_recognition_lockscreen_title">Now Playing zusätzlich anzeigen</string>
   <string name="ambient_recognition_lockscreen_summary">Auf dem Sperrbildschirm</string>
 
+    <!-- SystemUI theme -->
+    <string name="systemui_theme_black">Schwarz</string>
+    <string name="systemui_theme_shishunights">Shishu Nights</string>
+    <string name="systemui_theme_chocolate">Schokolade</string>
+
 </resources>
