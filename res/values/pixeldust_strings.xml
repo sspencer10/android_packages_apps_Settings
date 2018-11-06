@@ -161,17 +161,6 @@
     <string name="ambient_recognition_interval_100sec">1 minute 40 seconds</string>
     <string name="ambient_recognition_interval_120sec">2 minutes</string>
 
-    <!-- SystemUI theme -->
-    <string name="systemui_theme_style_title">Background color</string>
-    <string name="systemui_theme_style_auto">Automatic (Wallpaper based)</string>
-    <string name="systemui_theme_style_light">Light</string>
-    <string name="systemui_theme_style_dark">Dark</string>
-    <string name="systemui_theme_style_black">Black</string>
-    <string name="systemui_theme_style_shishunights">Shishu Nights</string>
-    <string name="systemui_theme_style_chocolate">Chocolate</string>
-    <string name="applying_theme_toast">Applying theme, please wait...</string>
-    <string name="theme_applied_toast">Theme applied!</string>
-
     <!-- Expanded desktop -->
     <string name="expanded_desktop_pref_title">Expanded desktop</string>
     <string name="expanded_desktop_pref_summary">Set expanded desktop globally or per-app</string>
@@ -187,15 +176,6 @@
     <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
     <string name="expanded_desktop_title">Expanded desktop options</string>
 
-    <!-- Accent picker -->
-    <string name="theme_category_title">System theme</string>
-    <string name="accent_picker_dialog_title">Select an accent color</string>
-    <string name="theme_accent_picker_title">Accent color</string>
-    <string name="theme_accent_picker_summary">Select system theme accent color</string>
-    <string name="theme_accent_picker_default">Default</string>
-    <string name="accent_picker_material_colors">Material palette</string>
-    <string name="accent_picker_custom_colors">User requested</string>
-
     <!-- Weather parts -->
     <string name="weather_title">Weather</string>
 
@@ -206,16 +186,6 @@
     <!-- Fingerprint swipe sideways -->
     <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint to dismiss notifications</string>
     <string name="fp_swipe_to_dismiss_notifications_summary">To dismiss your notifications, swipe left or right on the fingerprint sensor.</string>
-
-    <!-- QS tile styles -->
-    <string name="qs_tile_style_title">QS tile style</string>
-    <string name="qstile_default">Default (Pie)</string>
-    <string name="qstile_circle_trim">Circle Trim (Pie)</string>
-    <string name="qstile_dual_tone_circle">Dual-Toned Circle Trim (Pie)</string>
-    <string name="qstile_oreo">Default (Oreo)</string>
-    <string name="qstile_oreo_circle_trim">Circle Trim (Oreo)</string>
-    <string name="qstile_oreo_squircle_trim">Squircle Trim (Oreo)</string>
-    <string name="qstile_squircle_trim">Squircle Trim (Pie)</string>
 
     <string name="full_gesture_mode_title">Enable full gesture mode</string>
     <string name="full_gesture_mode_summary">This mode will disable also the back button and you will be able to trigger a back button action by a left swipe on navbar. Right swipe will still trigger the last-app action and left swipe will move apps. To go home you will be able to tap on any navbar empty space, not only the home button.</string>
