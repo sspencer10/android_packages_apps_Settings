@@ -194,4 +194,19 @@
   <string name="fp_swipe_to_dismiss_notifications_title">Benachr. durch seitliches Wischen schließen</string>
   <string name="fp_swipe_to_dismiss_notifications_summary">Nach links oder rechts über den Fingerabdrucksensor wischen, um Benachrichtingen zu schließen.</string>
 
+  <!-- QS tile styles -->
+  <string name="qs_tile_style_title">Kachel-Stil in den Schnelleinstellungen</string>
+  <string name="qstile_default">Standard (Pie)</string>
+  <string name="qstile_circle_trim">Kreis einfach umrandet (Pie)</string>
+  <string name="qstile_dual_tone_circle">Kreis doppelt umrandet (Pie)</string>
+  <string name="qstile_oreo">Standard (Oreo)</string>
+  <string name="qstile_oreo_circle_trim">Kreis einfach umrandet (Oreo)</string>
+  <string name="qstile_oreo_squircle_trim">Abgerundetes Quadrat (Oreo)</string>
+  <string name="qstile_squircle_trim">Abgerundetes Quadrat (Pie)</string>
+
+  <string name="full_gesture_mode_title">Vollständigen Gestenmodus aktivieren</string>
+  <string name="full_gesture_mode_summary">In diesem Modus wird auch die ZURÜCK-Taste deaktiviert. Für ZURÜCK auf der Navigationsleiste nach links wischen. Für LETZTE-APP nach rechts wischen und mit nach links Wischen können Apps verschoben werden. Für HOME auf die Home-Taste drücken oder auch auf einen leeren Bereich der Navigationsleiste.</string>
+  <string name="full_gesture_mode_dt2s_title">Zweimal auf Navigationsleiste tippen für Ruhezustand</string>
+  <string name="full_gesture_mode_dt2s_summary">Den leeren Bereich der Navigationsleiste doppelt antippen, um den den Bildschirm auszuschalten.</string>
+
 </resources>

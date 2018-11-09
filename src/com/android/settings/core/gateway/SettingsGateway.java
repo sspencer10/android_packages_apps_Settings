@@ -139,6 +139,7 @@ import com.android.settings.wifi.WifiInfo;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.calling.WifiCallingSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
+import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.pixeldust.settings.PixelDustSettings;
 import com.pixeldust.settings.fragments.ButtonSettings;
@@ -152,6 +153,7 @@ import com.pixeldust.settings.fragments.RecentsSettings;
 import com.pixeldust.settings.fragments.SmartPixels;
 import com.pixeldust.settings.fragments.StatusBarSettings;
 import com.pixeldust.settings.fragments.VolumeSettings;
+import com.pixeldust.settings.fragments.PieSettings;
 
 public class SettingsGateway {
 
@@ -167,6 +169,7 @@ public class SettingsGateway {
             SimSettings.class.getName(),
             TetherSettings.class.getName(),
             WifiP2pSettings.class.getName(),
+            WifiTetherSettings.class.getName(),
             BackgroundCheckSummary.class.getName(),
             VpnSettings.class.getName(),
             DateTimeSettings.class.getName(),
@@ -292,6 +295,7 @@ public class SettingsGateway {
             AmbientDisplaySettings.class.getName(),
             AmbientPlaySettings.class.getName(),
             ExpandedDesktopPreferenceFragment.class.getName(),
+            PieSettings.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {

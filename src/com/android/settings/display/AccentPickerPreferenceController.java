@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 The Android Open Source Project
+ * Copyright (C) 2017-2018 The Dirty Unicorns Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 package com.android.settings.display;
 
 import android.app.Fragment;
@@ -29,12 +30,16 @@ import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.core.lifecycle.LifecycleObserver;
 import com.android.settingslib.core.lifecycle.events.OnResume;
 
-import com.android.settings.pixeldust.theme.AccentPicker;
+import com.android.settings.display.AccentPicker;
+
+import com.android.internal.util.pixeldust.PixeldustUtils;
 
 public class AccentPickerPreferenceController extends AbstractPreferenceController
         implements PreferenceControllerMixin, LifecycleObserver, OnResume {
 
     private static final String KEY_ACCENT_PICKER_FRAGMENT_PREF = "accent_picker";
+    private static final String SUBS_PACKAGE = "projekt.substratum";
+
     private static final int MY_USER_ID = UserHandle.myUserId();
 
     private final Fragment mParent;
@@ -51,6 +56,11 @@ public class AccentPickerPreferenceController extends AbstractPreferenceControll
     @Override
     public void displayPreference(PreferenceScreen screen) {
         mAccentPickerPref  = (Preference) screen.findPreference(KEY_ACCENT_PICKER_FRAGMENT_PREF);
+        if (!PixeldustUtils.isPackageInstalled(mContext, SUBS_PACKAGE)) {
+            mAccentPickerPref.setEnabled(true);
+        } else {
+            mAccentPickerPref.setEnabled(false);
+        }
     }
 
     @Override
@@ -78,17 +88,25 @@ public class AccentPickerPreferenceController extends AbstractPreferenceControll
             new OnPreferenceClickListener() {
                 @Override
                 public boolean onPreferenceClick(Preference preference) {
-                    AccentPicker.show(mParent);
-                    return true;
+                   if (!PixeldustUtils.isPackageInstalled(mContext, SUBS_PACKAGE)) {
+                        AccentPicker.show(mParent);
+                        return true;
+                   } else {
+                        return false;
+                   }
                 }
             });
     }
 
     public void updateSummary() {
         if (mAccentPickerPref != null) {
+            if (!PixeldustUtils.isPackageInstalled(mContext, SUBS_PACKAGE)) {
                 mAccentPickerPref.setSummary(mContext.getString(
                         com.android.settings.R.string.theme_accent_picker_summary));
+            } else {
+                mAccentPickerPref.setSummary(mContext.getString(
+                        com.android.settings.R.string.disable_accents_installed_title));
+            }
         }
     }
-
 }

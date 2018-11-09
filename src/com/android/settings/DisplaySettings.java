@@ -28,12 +28,13 @@ import com.android.settings.display.AmbientDisplayPreferenceController;
 import com.android.settings.display.BrightnessLevelPreferenceController;
 import com.android.settings.display.CameraGesturePreferenceController;
 import com.android.settings.display.ColorModePreferenceController;
-import com.android.settings.display.DarkUIPreferenceController;
 import com.android.settings.display.LiftToWakePreferenceController;
 import com.android.settings.display.NightDisplayPreferenceController;
 import com.android.settings.display.NightModePreferenceController;
+import com.android.settings.display.QsTileStylePreferenceController;
 import com.android.settings.display.ScreenSaverPreferenceController;
 import com.android.settings.display.ShowOperatorNamePreferenceController;
+import com.android.settings.display.SystemThemePreferenceController;
 import com.android.settings.display.TapToWakePreferenceController;
 import com.android.settings.display.ThemePreferenceController;
 import com.android.settings.display.TimeoutPreferenceController;
@@ -87,11 +88,11 @@ public class DisplaySettings extends DashboardFragment {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(new AccentPickerPreferenceController(context, lifecycle, fragment));
         controllers.add(new CameraGesturePreferenceController(context));
-        controllers.add(new DarkUIPreferenceController(context));
         controllers.add(new LiftToWakePreferenceController(context));
         controllers.add(new NightDisplayPreferenceController(context));
         controllers.add(new NightModePreferenceController(context));
         controllers.add(new ScreenSaverPreferenceController(context));
+        controllers.add(new AccentPickerPreferenceController(context, lifecycle, fragment));
         controllers.add(new AmbientDisplayPreferenceController(
                 context,
                 new AmbientDisplayConfiguration(context),
@@ -99,7 +100,9 @@ public class DisplaySettings extends DashboardFragment {
         controllers.add(new TapToWakePreferenceController(context));
         controllers.add(new TimeoutPreferenceController(context, KEY_SCREEN_TIMEOUT));
         controllers.add(new VrDisplayPreferenceController(context));
+        controllers.add(new QsTileStylePreferenceController(context));
         controllers.add(new ShowOperatorNamePreferenceController(context));
+        controllers.add(new SystemThemePreferenceController(context));
         controllers.add(new WallpaperPreferenceController(context));
         controllers.add(new ThemePreferenceController(context));
         controllers.add(new BrightnessLevelPreferenceController(context, lifecycle));

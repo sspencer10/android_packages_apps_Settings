@@ -15,42 +15,46 @@ package com.android.settings.display;
 
 import android.content.Context;
 import android.content.ContentResolver;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.ServiceManager;
 import android.os.RemoteException;
-import android.text.TextUtils;
+import android.provider.Settings;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
-import android.provider.Settings;
+import android.text.TextUtils;
+import android.widget.Toast;
 
+import com.android.settings.R;
 import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settingslib.drawer.SettingsDrawerActivity;
 import com.android.internal.statusbar.IStatusBarService;
+
+import com.android.internal.util.pixeldust.PixeldustUtils;
 
 import libcore.util.Objects;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.android.settings.R;
-import android.content.Intent;
-import android.os.Handler;
-import android.widget.Toast;
+public class SystemThemePreferenceController extends AbstractPreferenceController implements
+        PreferenceControllerMixin, Preference.OnPreferenceChangeListener {
 
-public class DarkUIPreferenceController extends AbstractPreferenceController implements
-        Preference.OnPreferenceChangeListener {
+    private static final String SYSTEM_THEME = "system_theme_style";
+    private static final String SUBS_PACKAGE = "projekt.substratum";
 
-    private static final String SYSTEM_THEME_STYLE = "systemui_theme_style";
-    private ListPreference mSystemUiThemeStyle;
+    private ListPreference mSystemThemeStyle;
     private IStatusBarService mStatusBarService;
 
-    public DarkUIPreferenceController(Context context) {
+    public SystemThemePreferenceController(Context context) {
         super(context);
     }
 
     @Override
     public String getPreferenceKey() {
-        return SYSTEM_THEME_STYLE;
+        return SYSTEM_THEME;
     }
 
     @Override
@@ -61,22 +65,26 @@ public class DarkUIPreferenceController extends AbstractPreferenceController imp
     @Override
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
-        mSystemUiThemeStyle = (ListPreference) screen.findPreference(SYSTEM_THEME_STYLE);
-        int systemuiThemeStyle = Settings.System.getInt(mContext.getContentResolver(),
-                Settings.System.SYSTEM_THEME_STYLE, 0);
-        int valueIndex = mSystemUiThemeStyle.findIndexOfValue(String.valueOf(systemuiThemeStyle));
-        mSystemUiThemeStyle.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
-        mSystemUiThemeStyle.setSummary(mSystemUiThemeStyle.getEntry());
-        mSystemUiThemeStyle.setOnPreferenceChangeListener(this);
+        mSystemThemeStyle = (ListPreference) screen.findPreference(SYSTEM_THEME);
+        if (!PixeldustUtils.isPackageInstalled(mContext, SUBS_PACKAGE)) {
+            int systemThemeStyle = Settings.System.getInt(mContext.getContentResolver(),
+                    Settings.System.SYSTEM_THEME, 0);
+            int valueIndex = mSystemThemeStyle.findIndexOfValue(String.valueOf(systemThemeStyle));
+            mSystemThemeStyle.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
+            mSystemThemeStyle.setSummary(mSystemThemeStyle.getEntry());
+            mSystemThemeStyle.setOnPreferenceChangeListener(this);
+        } else {
+            mSystemThemeStyle.setEnabled(false);
+            mSystemThemeStyle.setSummary(R.string.disable_themes_installed_title);
+        }
     }
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mSystemUiThemeStyle) {
+        if (preference == mSystemThemeStyle) {
             String value = (String) newValue;
-            Settings.System.putInt(mContext.getContentResolver(), Settings.System.SYSTEM_THEME_STYLE, Integer.valueOf(value));
-            int valueIndex = mSystemUiThemeStyle.findIndexOfValue(value);
-            mSystemUiThemeStyle.setSummary(mSystemUiThemeStyle.getEntries()[valueIndex]);
-
+            Settings.System.putInt(mContext.getContentResolver(), Settings.System.SYSTEM_THEME, Integer.valueOf(value));
+            int valueIndex = mSystemThemeStyle.findIndexOfValue(value);
+            mSystemThemeStyle.setSummary(mSystemThemeStyle.getEntries()[valueIndex]);
             IStatusBarService statusBarService = IStatusBarService.Stub.asInterface(ServiceManager.checkService(Context.STATUS_BAR_SERVICE));
             if (statusBarService != null) {
                 try {
