@@ -15,24 +15,15 @@ package com.android.settings.display;
 
 import android.content.Context;
 import android.content.ContentResolver;
-import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.ServiceManager;
-import android.os.RemoteException;
 import android.provider.Settings;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 import android.text.TextUtils;
-import android.widget.Toast;
 
-import com.android.settings.R;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settings.core.PreferenceControllerMixin;
-import com.android.settingslib.drawer.SettingsDrawerActivity;
-import com.android.internal.statusbar.IStatusBarService;
-
 import com.android.internal.util.pixeldust.PixeldustUtils;
 
 import libcore.util.Objects;
@@ -46,7 +37,6 @@ public class SystemThemePreferenceController extends AbstractPreferenceControlle
     private static final String SUBS_PACKAGE = "projekt.substratum";
 
     private ListPreference mSystemThemeStyle;
-    private IStatusBarService mStatusBarService;
 
     public SystemThemePreferenceController(Context context) {
         super(context);
@@ -59,7 +49,7 @@ public class SystemThemePreferenceController extends AbstractPreferenceControlle
 
     @Override
     public boolean isAvailable() {
-        return true;
+        return !PixeldustUtils.isPackageInstalled(mContext, SUBS_PACKAGE);
     }
 
     @Override
@@ -85,14 +75,6 @@ public class SystemThemePreferenceController extends AbstractPreferenceControlle
             Settings.System.putInt(mContext.getContentResolver(), Settings.System.SYSTEM_THEME, Integer.valueOf(value));
             int valueIndex = mSystemThemeStyle.findIndexOfValue(value);
             mSystemThemeStyle.setSummary(mSystemThemeStyle.getEntries()[valueIndex]);
-            IStatusBarService statusBarService = IStatusBarService.Stub.asInterface(ServiceManager.checkService(Context.STATUS_BAR_SERVICE));
-            if (statusBarService != null) {
-                try {
-                    statusBarService.restartUI();
-                } catch (RemoteException e) {
-                    // do nothing.
-                }
-            }
         }
         return true;
     }

@@ -71,7 +71,7 @@ public class AccentPickerPreferenceController extends AbstractPreferenceControll
 
     @Override
     public boolean isAvailable() {
-        return true;
+        return !PixeldustUtils.isPackageInstalled(mContext, SUBS_PACKAGE);
     }
 
     @Override
@@ -98,7 +98,7 @@ public class AccentPickerPreferenceController extends AbstractPreferenceControll
             });
     }
 
-    public void updateSummary() {
+    private void updateSummary() {
         if (mAccentPickerPref != null) {
             if (!PixeldustUtils.isPackageInstalled(mContext, SUBS_PACKAGE)) {
                 mAccentPickerPref.setSummary(mContext.getString(

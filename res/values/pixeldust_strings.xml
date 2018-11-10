@@ -16,6 +16,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- PixelDust Settings strings -->
+
     <string name="pixeldust_settings_title">Personalization Settings</string>
     <string name="pixeldust_settings_summary">ROM features &amp; personalization</string>
 
@@ -32,6 +33,7 @@
     <string name="clang_version_default">Unknown</string>
 
     <!-- PixelDust build date-->
+
     <string name="pd_build_date">ROM build date</string>
     <string name="pd_build_date_default">2017-08-01-0000</string>
 
@@ -161,6 +163,32 @@
     <string name="ambient_recognition_interval_100sec">1 minute 40 seconds</string>
     <string name="ambient_recognition_interval_120sec">2 minutes</string>
 
+    <!-- Themes -->
+    <string name="theme_category_title">Theme options</string>
+    <string name="disable_themes_installed_title">System themes are unavailable to avoid conflicts with Substratum. Uninstall it if you wish to use these themes instead.</string>
+    <string name="disable_accents_installed_title">Accent picker is unavailable to avoid conflicts with Substratum. Uninstall it if you wish to use the accent picker.</string>
+    <string name="systemui_theme_black">Black</string>
+    <string name="systemui_theme_shishunights">Shishu Nights</string>
+    <string name="systemui_theme_chocolate">Chocolate</string>
+    <string name="applying_theme_toast">Applying theme, please wait...</string>
+    <string name="theme_applied_toast">Theme applied!</string>
+    <string name="accent_picker_dialog_title">Select an accent color</string>
+    <string name="theme_accent_picker_title">Accent color</string>
+    <string name="theme_accent_picker_summary">Select system theme accent color</string>
+    <string name="theme_accent_picker_default">Default</string>
+    <string name="accent_picker_material_colors">Material palette</string>
+    <string name="accent_picker_custom_colors">User requested</string>
+
+    <!-- QS tile styles -->
+    <string name="qs_tile_style_title">QS tile style</string>
+    <string name="qstile_default">Default (Pie)</string>
+    <string name="qstile_circle_trim">Circle Trim (Pie)</string>
+    <string name="qstile_dual_tone_circle">Dual-Toned Circle Trim (Pie)</string>
+    <string name="qstile_oreo">Default (Oreo)</string>
+    <string name="qstile_oreo_circle_trim">Circle Trim (Oreo)</string>
+    <string name="qstile_oreo_squircle_trim">Squircle Trim (Oreo)</string>
+    <string name="qstile_squircle_trim">Squircle Trim (Pie)</string>
+
     <!-- Expanded desktop -->
     <string name="expanded_desktop_pref_title">Expanded desktop</string>
     <string name="expanded_desktop_pref_summary">Set expanded desktop globally or per-app</string>
@@ -191,31 +219,5 @@
     <string name="full_gesture_mode_summary">This mode will disable also the back button and you will be able to trigger a back button action by a left swipe on navbar. Right swipe will still trigger the last-app action and left swipe will move apps. To go home you will be able to tap on any navbar empty space, not only the home button.</string>
     <string name="full_gesture_mode_dt2s_title">Enable double tap to sleep</string>
     <string name="full_gesture_mode_dt2s_summary">Tap on an empty navbar space but not the home button to switch the screen off.</string>
-
-    <!-- Themes -->
-    <string name="theme_category_title">Theme options</string>
-    <string name="disable_themes_installed_title">System themes are unavailable to avoid conflicts with Substratum. Uninstall it if you wish to use these themes instead.</string>
-    <string name="disable_accents_installed_title">Accent picker is unavailable to avoid conflicts with Substratum. Uninstall it if you wish to use the accent picker.</string>
-    <string name="systemui_theme_black">Black</string>
-    <string name="systemui_theme_shishunights">Shishu Nights</string>
-    <string name="systemui_theme_chocolate">Chocolate</string>
-    <string name="applying_theme_toast">Applying theme, please wait...</string>
-    <string name="theme_applied_toast">Theme applied!</string>
-    <string name="accent_picker_dialog_title">Select an accent color</string>
-    <string name="theme_accent_picker_title">Accent color</string>
-    <string name="theme_accent_picker_summary">Select system theme accent color</string>
-    <string name="theme_accent_picker_default">Default</string>
-    <string name="accent_picker_material_colors">Material palette</string>
-    <string name="accent_picker_custom_colors">User requested</string>
-
-    <!-- QS tile styles -->
-    <string name="qs_tile_style_title">QS tile style</string>
-    <string name="qstile_default">Default (Pie)</string>
-    <string name="qstile_circle_trim">Circle Trim (Pie)</string>
-    <string name="qstile_dual_tone_circle">Dual-Toned Circle Trim (Pie)</string>
-    <string name="qstile_oreo">Default (Oreo)</string>
-    <string name="qstile_oreo_circle_trim">Circle Trim (Oreo)</string>
-    <string name="qstile_oreo_squircle_trim">Squircle Trim (Oreo)</string>
-    <string name="qstile_squircle_trim">Squircle Trim (Pie)</string>
 
 </resources>

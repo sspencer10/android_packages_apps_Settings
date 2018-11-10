@@ -39,7 +39,9 @@
         <item>@string/pulse_length_long</item>
         <item>@string/pulse_length_very_long</item>
     </string-array>
-     <string-array name="notification_pulse_length_values" translatable="false">
+
+    <string-array name="notification_pulse_length_values" translatable="false">
+
         <item>1</item>
         <item>250</item>
         <item>500</item>
@@ -146,5 +148,6 @@
         <item>5</item>
         <item>6</item>
     </string-array>
+
 
 </resources>
